@@ -2,7 +2,7 @@ package io.springboot.regservices.ems.exception;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Exception {
+public class RegulatoryException {
     
     private String runDate;
     private String errorCode;
@@ -13,11 +13,11 @@ public class Exception {
     private String quantity;
     private String price;
 
-    public Exception(){
+    public RegulatoryException(){
 
     }
     
-    public Exception(String runDate, String errorCode, String timeStamp, String eventType, String firmRoeId,
+    public RegulatoryException(String runDate, String errorCode, String timeStamp, String eventType, String firmRoeId,
      String txnKey, String quantity, String price) {
         this.runDate = runDate;
         this.errorCode = errorCode;
