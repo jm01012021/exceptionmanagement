@@ -34,4 +34,9 @@ public class ExceptionController {
         exceptionService.updateException(exception, runDate);
     }
 
+    @RequestMapping(method = RequestMethod.DELETE, value = "/exceptions/{runDate}")
+    public void deleteException(@PathVariable String runDate){
+        exceptionService.deleteException(runDate);
+    }
+
 }
