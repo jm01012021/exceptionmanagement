@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class InMemoryExceptionController {
     
     @Autowired
-    private ExceptionService exceptionService;
+    private InMemoryExceptionService exceptionService;
     
     @RequestMapping("/inmemoryexceptions")
     public List<RegulatoryException> getAllExceptions(){

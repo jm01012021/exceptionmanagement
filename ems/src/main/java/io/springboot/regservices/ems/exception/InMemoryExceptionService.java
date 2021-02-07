@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExceptionService {
+public class InMemoryExceptionService {
     
     private List<RegulatoryException> exceptions = new ArrayList<>(Arrays.asList(
             new RegulatoryException("01012021","1000","01/04/2021 00:25:12:10","MENO","01032021MENOFIRMID","UUID1","100","10.1"),

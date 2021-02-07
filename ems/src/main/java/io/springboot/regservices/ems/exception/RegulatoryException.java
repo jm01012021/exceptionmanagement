@@ -1,7 +1,6 @@
 package io.springboot.regservices.ems.exception;
-import org.springframework.stereotype.Service;
 
-@Service
+
 public class RegulatoryException {
     
     private String runDate;
