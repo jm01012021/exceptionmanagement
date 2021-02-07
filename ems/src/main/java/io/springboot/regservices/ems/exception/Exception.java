@@ -1,5 +1,4 @@
-package io.springboot.regservices.ems.service;
-
+package io.springboot.regservices.ems.exception;
 import org.springframework.stereotype.Service;
 
 @Service

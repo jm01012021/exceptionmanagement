@@ -1,9 +1,8 @@
-package io.springboot.regservices.ems.api;
+package io.springboot.regservices.ems.exception;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import io.springboot.regservices.ems.service.Exception;
 
 @RestController
 public class InMemoryExceptionController {

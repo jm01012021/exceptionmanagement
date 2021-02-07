@@ -1,4 +1,4 @@
-package io.springboot.regservices.ems.api;
+package io.springboot.regservices.ems.hello;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
