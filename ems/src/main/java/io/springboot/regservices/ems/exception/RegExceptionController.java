@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegExceptionController {
     
-    @Autowired
     private RegExceptionRepository exceptionService;
 
     @RequestMapping("/exceptions")
@@ -22,6 +21,8 @@ public class RegExceptionController {
         exceptionService.findAll().forEach(e -> exceptions.add(e));
         return exceptions;
     }
+
+
 
 
 }

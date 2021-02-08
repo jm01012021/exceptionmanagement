@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class RegException {
     
+
     private String runDate;
     private String errorCode;
     private String timeStamp;
@@ -30,6 +31,7 @@ public class RegException {
         this.price = price;
 
     }
+
 
 
 }

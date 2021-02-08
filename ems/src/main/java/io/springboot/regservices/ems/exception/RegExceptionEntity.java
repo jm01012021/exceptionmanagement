@@ -9,8 +9,6 @@ import org.springframework.data.cassandra.core.mapping.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
 @Data
 @NoArgsConstructor
 @Table(value = RegExceptionEntity.TABLENAME)

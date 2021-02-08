@@ -1,4 +1,4 @@
-package io.springboot.regservices.ems.exception;
+package io.springboot.regservices.ems;
 
 import java.nio.file.Paths;
 

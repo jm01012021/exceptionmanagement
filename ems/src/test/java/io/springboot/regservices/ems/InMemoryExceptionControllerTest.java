@@ -1,4 +1,4 @@
-package io.springboot.regservices.ems.inmemoryexception;
+package io.springboot.regservices.ems;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
