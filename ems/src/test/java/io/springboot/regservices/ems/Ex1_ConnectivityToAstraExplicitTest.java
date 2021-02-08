@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.datastax.oss.driver.api.core.CqlSession;
+
 
 /**
  * Connecticity to ASTRA
