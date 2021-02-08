@@ -1,4 +1,4 @@
-package io.springboot.regservices.ems.exception;
+package io.springboot.regservices;
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -23,10 +23,10 @@ import com.datastax.oss.driver.api.core.CqlSession;
 @RunWith(JUnitPlatform.class)
 @ExtendWith(SpringExtension.class)
 @TestPropertySource(locations="/application.properties")
-public class AstraConnectivityExplicitTest {
+public class Ex1_ConnectivityToAstraExplicitTest {
     
     /** Logger for the class. */
-    private static Logger LOGGER = LoggerFactory.getLogger(AstraConnectivityExplicitTest.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(Ex1_ConnectivityToAstraExplicitTest.class);
     
     @Value("${spring.data.cassandra.username}")
     private String username;

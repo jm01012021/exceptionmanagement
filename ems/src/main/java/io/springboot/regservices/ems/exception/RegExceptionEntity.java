@@ -1,15 +1,11 @@
 package io.springboot.regservices.ems.exception;
 
-import java.sql.Timestamp;
-import java.text.DateFormat;
-
 import org.springframework.data.cassandra.core.mapping.CassandraType;
 import org.springframework.data.cassandra.core.mapping.CassandraType.Name;
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,16 +13,15 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 @Table(value = RegExceptionEntity.TABLENAME)
 public class RegExceptionEntity {
 
-    public static final String TABLENAME = "regexception";
+    public static final String TABLENAME = "exceptions";
     public static final String COLUMN_RUNDATE = "rundate";
     public static final String COLUMN_ERRORCODE = "errorcode";
     public static final String COLUMN_TIMESTAMP = "timestamp";
     public static final String COLUMN_EVENTTYPE = "eventtype";
-    public static final String COLUMN_FIRMROEID = "firmroeid";
+    public static final String COLUMN_FIRMROEID = "firmroeId";
     public static final String COLUMN_TXNKEY = "txnkey";
     public static final String COLUMN_QUANTITY = "quantity";
     public static final String COLUMN_PRICE = "price";
@@ -39,23 +34,23 @@ public class RegExceptionEntity {
     @PrimaryKey
     @Column(COLUMN_ERRORCODE)
     @CassandraType(type = Name.TEXT)
-    private String errorcode = 0;
+    private String errorCode;
 
     @Column(COLUMN_TIMESTAMP)
     @CassandraType(type = Name.TEXT)
-    private String timestamp;
+    private String timeStamp;
 
     @Column(COLUMN_EVENTTYPE)
     @CassandraType(type = Name.TEXT)
-    private String eventtype;
+    private String eventType;
 
     @Column(COLUMN_FIRMROEID)
     @CassandraType(type = Name.TEXT)
-    private String firmroeid;
+    private String firmRoeId;
 
     @Column(COLUMN_TXNKEY)
     @CassandraType(type = Name.TEXT)
-    private String txnkey;
+    private String txnKey;
 
     @Column(COLUMN_QUANTITY)
     @CassandraType(type = Name.TEXT)
@@ -66,11 +61,16 @@ public class RegExceptionEntity {
     private String price;
 
     
-    public RegExceptionEntity(String runDate, int errorCode, Timestamp timeStamp, String eventType, String firmRoeId,
+    public RegExceptionEntity(String runDate, String errorCode, String timeStamp, String eventType, String firmRoeId,
      String txnKey, String quantity, String price){
-        this(runDate, errorCode, timeStamp, eventType, firmRoeId, txnKey, quantity, price);
-
-
+        this.runDate = runDate;
+        this.errorCode = errorCode;
+        this.timeStamp = timeStamp;
+        this.eventType = eventType;
+        this.txnKey = txnKey;
+        this.firmRoeId = firmRoeId;
+        this.quantity = quantity;
+        this.price = price;
     
     }
  

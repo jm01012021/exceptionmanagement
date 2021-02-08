@@ -1,4 +1,4 @@
-package io.springboot.regservices.ems.exception;
+package io.springboot.regservices.ems.inmemoryexception;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -16,7 +16,7 @@ import io.springboot.regservices.ems.hello.HelloController;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(HelloController.class)
-public class ExceptionControllerTest {
+public class InMemoryExceptionControllerTest {
 
     @Autowired
     private MockMvc mvc;
