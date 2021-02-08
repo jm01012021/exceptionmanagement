@@ -1,4 +1,4 @@
-package io.springboot.regservices.ems.exception;
+package io.springboot.regservices.ems.inmemoryexception;
 
 
 public class RegulatoryException {
