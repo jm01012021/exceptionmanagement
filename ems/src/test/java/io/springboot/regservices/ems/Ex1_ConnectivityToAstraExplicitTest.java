@@ -3,6 +3,8 @@ package io.springboot.regservices.ems;
 import java.io.File;
 import java.nio.file.Paths;
 
+import com.datastax.oss.driver.api.core.CqlSession;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
